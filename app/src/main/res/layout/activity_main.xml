@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#FFFFFF"
-    android:paddingTop="40dp">
+    >
 
     <TextView
         android:id="@+id/title"
@@ -21,21 +21,15 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Podaj e-mail:" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="3"/>
+        android:text="Podaj e-mail:"
+        android:paddingTop="5dp"
+        />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-         />
+        android:inputType="textEmailAddress" />
 
     <TextView
         android:id="@+id/textView4"
@@ -44,10 +38,11 @@
         android:text="Podaj hasło:" />
 
     <EditText
+        android:id="@+id/haslo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="text" />
+        android:inputType="textPassword" />
 
     <TextView
         android:id="@+id/textView3"
@@ -56,22 +51,21 @@
         android:text="Powtórz hasło:" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/powtorzHaslo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="text"
-         />
+        android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/zatwierdz"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Zatwierdź"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:text="Zatwierdź" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Komunikat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
